@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>本当の私に出会う♡ 使命と望みを見つけて、叶える私になる2Days｜ハピ脳®無料セミナー</title>
+<meta name="description" content="10月26日（月）・28日（水）21時から、各90分・参加無料・Zoom開催。好き・才能・魂の個性・本音を見つめて、使命と望みを言葉にする2日間。講師 蘭野いっこ">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&family=Klee+One:wght@600&display=swap">
+
+<!-- ============================================================
+     10月26日・28日「2Days」無料セミナー LP（たたき台）
+
+     ★ 直す場所
+       (1) 申し込みボタンの行き先 … 下のほうの「APPLY_URL」に、UTAGEのリンクを入れる（1か所だけ）
+       (2) 公式LINEのリンク … 「LINE_URL」（入れてあります）
+       (3) お客さまの声 … 「参加された方の声」のところ。ご本人の了承をとったものだけ
+       (4) 画像 … photo.jpg（プロフィール）/ book.jpg（本）
+     ============================================================ -->
+
+<style>
+/* ----- いろの設定 ----- */
+:root{
+  --paper:   #fff8fa;   /* 紙の色（うすいピンク） */
+  --paper2:  #fffdf6;   /* クリームの帯 */
+  --paper3:  #fdeef3;   /* 濃いめピンクの帯 */
+  --card:    #ffffff;
+  --line:    #f7dde5;
+
+  --pink:    #e8497f;   /* メインのピンク */
+  --pink-dp: #c62f65;   /* こいピンク */
+  --pink-lt: #fcdde7;
+  --gold:    #c9a227;
+  --green:   #6aa84f;   /* 葉っぱの緑 */
+
+  --ink:     #2b2226;
+  --ink-sub: #524449;
+
+  --shadow:   0 10px 26px rgba(200,110,150,.16), 0 3px 8px rgba(150,80,110,.06);
+  --shadow-l: 0 18px 42px rgba(200,110,150,.22), 0 4px 10px rgba(150,80,110,.08);
+
+  --round: "Zen Maru Gothic","Hiragino Maru Gothic ProN","Yu Gothic UI",sans-serif;
+  --body:  "Hiragino Sans","Yu Gothic UI","Meiryo",sans-serif;
+}
+
+*{ box-sizing:border-box; margin:0; padding:0; }
+html{ scroll-behavior:smooth; }
+
+body{
+  background:var(--paper);
+  font-family:var(--body);
+  color:var(--ink);
+  line-height:1.9;
+  font-size:19px;
+  font-weight:600;
+  letter-spacing:.02em;
+  padding-bottom:84px;
+  overflow-x:hidden;
+}
+img{ max-width:100%; display:block; }
+.wrap{ width:100%; max-width:680px; margin:0 auto; padding:0 18px; }
+section{ padding:50px 0; scroll-margin-top:76px; }
+.bg2{ background:var(--paper2); }
+.bg3{ background:var(--paper3); }
+
+/* 見出し */
+h2{
+  font-family:var(--round); font-weight:900;
+  font-size:1.6rem; line-height:1.6; text-align:center;
+  color:var(--pink-dp); margin-bottom:26px; text-wrap:balance;
+}
+h2 .em{ color:var(--gold); }
+h2::after{
+  content:"♡"; display:block; font-size:1rem; color:var(--pink-lt); margin-top:8px;
+}
+.lead{ text-align:center; color:var(--ink-sub); font-size:1rem; margin-bottom:26px; line-height:1.9; }
+
+p{ margin-bottom:1em; }
+p:last-child{ margin-bottom:0; }
+strong{ color:var(--pink-dp); }
+.mk{ background:linear-gradient(transparent 62%, #ffe9a8 62%); font-weight:700; }
+
+html.js .fade{ opacity:0; transform:translateY(20px); transition:opacity .7s ease, transform .7s ease; }
+html.js .fade.on{ opacity:1; transform:none; }
+@media (prefers-reduced-motion:reduce){ html.js .fade{ opacity:1; transform:none; transition:none; } }
+
+/* ===== 上のバー ===== */
+.topbar{
+  position:fixed; top:0; left:0; right:0; z-index:60;
+  background:rgba(255,248,250,.96); backdrop-filter:blur(8px);
+  border-bottom:2px solid var(--pink-lt);
+  display:flex; align-items:center; justify-content:space-between; gap:10px; padding:8px 14px;
+}
+.topbar .ttl{
+  font-family:var(--round); font-weight:700; font-size:.92rem; color:var(--pink-dp); line-height:1.3;
+}
+.topbar .ttl small{ display:block; font-size:.68rem; color:var(--ink-sub); font-weight:500; }
+.topbar .mini{
+  background:linear-gradient(135deg,#f06a99,#e02f6b); color:#fff; text-decoration:none;
+  font-family:var(--round); font-weight:700; font-size:.88rem;
+  padding:9px 16px; border-radius:100px; white-space:nowrap;
+  box-shadow:0 4px 12px rgba(224,47,107,.35);
+}
+
+/* ===== ヒーロー ===== */
+.hero{
+  padding:84px 0 40px; text-align:center; position:relative; overflow:hidden;
+  background:
+    radial-gradient(120% 60% at 50% 0%, #fff6d9 0%, rgba(255,246,217,0) 62%),
+    linear-gradient(170deg,#ffe3ee 0%,#fff2f6 50%,#fff8fa 100%);
+}
+.ribbon{
+  display:inline-block; background:linear-gradient(135deg,#f582aa,#e0407a);
+  color:#fff; font-family:var(--round); font-weight:700; font-size:.92rem;
+  padding:7px 22px; border-radius:100px; margin-bottom:16px;
+  box-shadow:0 5px 14px rgba(224,64,122,.32);
+}
+/* ヘッダーの画像 */
+.headimg{
+  max-width:640px; margin:0 auto 20px; padding:0 14px; position:relative; z-index:1;
+}
+.headimg img{
+  width:100%; height:auto; border-radius:14px;
+  box-shadow:0 12px 30px rgba(200,110,150,.24);
+}
+/* 画像にタイトルが入っているので、文字のタイトルは隠します（読み上げ・検索用に残します） */
+.hidden-ttl{
+  position:absolute; width:1px; height:1px; overflow:hidden;
+  clip:rect(0 0 0 0); white-space:nowrap;
+}
+
+.hero h1{ font-family:var(--round); font-weight:900; color:var(--pink-dp); margin-bottom:14px; }
+.hero h1 .l1{ display:block; font-size:2.6rem; line-height:1.35; }
+.hero h1 .l1 .ai{ color:var(--gold); }
+.hero h1 .l2{
+  display:block; font-size:1.18rem; line-height:1.7; color:var(--ink); margin-top:10px; font-weight:700;
+}
+.hero .sub{ font-size:1rem; color:var(--ink-sub); margin-bottom:22px; line-height:1.85; }
+
+/* 日時カード */
+.when{
+  background:var(--card); border-radius:20px; box-shadow:var(--shadow-l);
+  max-width:520px; margin:0 auto 20px; padding:22px 20px 20px;
+  border:3px solid #fff;
+}
+.when .date{
+  font-family:var(--round); font-weight:900; color:var(--pink);
+  font-size:3rem; line-height:1.1;
+}
+.when .date small{ font-size:1.2rem; vertical-align:.4em; margin-left:4px; }
+.when .time{ font-family:var(--round); font-weight:700; font-size:1.5rem; color:var(--ink); }
+.when .uketsuke{
+  display:inline-block; font-family:var(--round); font-weight:700; font-size:.92rem;
+  color:var(--pink-dp); background:var(--paper3);
+  padding:4px 16px; border-radius:100px; margin:6px 0 12px;
+}
+.when .place{ font-size:1rem; line-height:1.7; color:var(--ink); }
+.when .place b{ color:var(--pink-dp); font-size:1.1rem; }
+.when .place small{ display:block; color:var(--ink-sub); font-size:.88rem; margin-top:4px; }
+.when .fee{
+  margin-top:14px; padding-top:14px; border-top:2px dotted var(--line);
+  font-family:var(--round); font-weight:900; font-size:1.7rem; color:var(--pink-dp);
+}
+.when .fee small{ display:block; font-family:var(--body); font-size:.82rem; color:var(--ink-sub); font-weight:600; margin-top:2px; }
+
+/* バッジ */
+.badges{ display:flex; flex-wrap:wrap; justify-content:center; gap:7px; margin-bottom:20px; }
+.badge{
+  font-family:var(--round); font-weight:700; font-size:.88rem;
+  padding:7px 14px; border-radius:100px; background:#fff; color:var(--pink-dp);
+  border:2px solid var(--pink-lt); box-shadow:0 3px 8px rgba(200,110,150,.12);
+}
+.badge.g{ color:var(--green); border-color:#cfe6c4; }
+
+/* ボタン */
+.btn{
+  display:block; width:100%; max-width:420px; margin:0 auto;
+  font-family:var(--round); font-weight:900;
+  background:linear-gradient(135deg,#f57ba6 0%,#e23d74 55%,#d32b64 100%);
+  color:#fff; text-decoration:none; text-align:center;
+  font-size:1.26rem; letter-spacing:.04em;
+  padding:19px 20px; border-radius:100px;
+  box-shadow:0 12px 26px rgba(214,45,102,.36), inset 0 1px 0 rgba(255,255,255,.4);
+  transition:transform .25s ease, box-shadow .25s ease;
+}
+.btn:hover{ transform:translateY(-3px); box-shadow:0 18px 34px rgba(214,45,102,.42), inset 0 1px 0 rgba(255,255,255,.4); }
+.btn small{ display:block; font-family:var(--body); font-weight:600; font-size:.82rem; opacity:.95; margin-top:4px; }
+.btn.line{ background:linear-gradient(135deg,#7dd36a,#46a832); box-shadow:0 12px 26px rgba(70,168,50,.32); }
+.btn-note{ text-align:center; font-size:.92rem; color:var(--ink-sub); margin-top:12px; line-height:1.8; }
+.btn + .btn{ margin-top:12px; }
+
+.cta{
+  background:linear-gradient(150deg,#fff2f7,#fffaee);
+  border:3px dashed var(--pink-lt); border-radius:22px;
+  padding:26px 18px; max-width:540px; margin:30px auto 0; text-align:center;
+}
+.cta .t{
+  font-family:var(--round); font-weight:900; font-size:1.2rem;
+  color:var(--pink-dp); line-height:1.7; margin-bottom:16px;
+}
+
+.sticky{
+  position:fixed; left:0; right:0; bottom:0; z-index:60;
+  background:rgba(255,248,250,.97); border-top:2px solid var(--pink-lt);
+  padding:10px 14px calc(10px + env(safe-area-inset-bottom));
+  backdrop-filter:blur(8px);
+}
+.sticky .btn{ padding:14px 20px; font-size:1.1rem; }
+
+/* ===== 「こんなことがわかります」4つ ===== */
+.know{ display:grid; grid-template-columns:1fr 1fr; gap:12px; max-width:620px; margin:0 auto; }
+.know .item{
+  background:var(--card); border-radius:18px; box-shadow:var(--shadow);
+  padding:0 0 16px; text-align:center; position:relative;
+  border:2px solid var(--pink-lt); overflow:hidden;
+}
+.know .item img{ width:100%; height:auto; display:block; margin-bottom:12px; }
+.know .no{
+  width:38px; height:38px; border-radius:50%; margin:0 auto 10px;
+  background:linear-gradient(135deg,#f582aa,#e0407a); color:#fff;
+  font-family:var(--round); font-weight:900; font-size:1.2rem;
+  display:flex; align-items:center; justify-content:center;
+  box-shadow:0 4px 10px rgba(224,64,122,.3);
+}
+.know .em{ font-size:1.5rem; display:block; margin-bottom:6px; }
+.know h3{ font-family:var(--round); font-weight:700; font-size:1rem; line-height:1.55; color:var(--ink); }
+.know h3 b{ display:block; color:var(--pink-dp); font-size:1.18rem; margin-top:3px; }
+
+/* ===== お悩み ===== */
+.worry{ max-width:560px; margin:0 auto; }
+.worry li{
+  list-style:none; background:var(--card); border-radius:100px;
+  box-shadow:var(--shadow); padding:14px 20px 14px 50px;
+  margin-bottom:10px; font-size:1.02rem; position:relative;
+}
+.worry li::before{
+  content:"💭"; position:absolute; left:18px; top:13px; font-size:1.1rem;
+}
+
+/* ===== 当日の流れ ===== */
+.flow{ max-width:560px; margin:0 auto; }
+.flowstep{
+  background:var(--card); border-radius:20px; box-shadow:var(--shadow);
+  padding:22px 20px; margin-bottom:10px; border-left:8px solid var(--pink-lt);
+}
+.flowstep .n{
+  display:inline-block; font-family:var(--round); font-weight:700; font-size:.8rem;
+  color:#fff; background:var(--pink); padding:3px 14px; border-radius:100px; margin-bottom:8px;
+}
+.flowstep h3{ font-family:var(--round); font-weight:900; font-size:1.24rem; color:var(--pink-dp); margin-bottom:7px; }
+.flowstep p{ font-size:.98rem; color:var(--ink-sub); line-height:1.85; }
+.flowarrow{ text-align:center; color:var(--pink-lt); font-size:1.5rem; margin:-4px 0 6px; }
+
+/* ===== ご感想 ===== */
+.voiceimg{ max-width:700px; margin:0 auto 18px; }
+.voiceimg img{ width:100%; height:auto; }
+
+/* ご感想を縦に5つ並べる */
+.vlist{ max-width:620px; margin:0 auto; }
+.vbox{
+  background:var(--card); border-radius:100px;
+  box-shadow:var(--shadow); padding:18px 24px 18px 58px;
+  margin-bottom:12px; font-size:1.05rem; line-height:1.75;
+  position:relative;
+}
+.vbox::before{
+  content:"🌸"; position:absolute; left:20px; top:17px; font-size:1.3rem;
+}
+.vbox u{
+  text-decoration:none; color:var(--pink); font-weight:900;
+  font-family:var(--round);
+  background:linear-gradient(transparent 68%, #fcd3e0 68%);
+}
+@media (max-width:600px){
+  .vbox{ border-radius:20px; padding:16px 18px 16px 50px; font-size:1rem; }
+  .vbox::before{ left:16px; top:15px; }
+}
+.voices{ display:grid; gap:12px; max-width:600px; margin:0 auto; }
+.voice{
+  background:var(--card); border-radius:18px; box-shadow:var(--shadow);
+  padding:18px 18px 16px 52px; position:relative; font-size:.99rem; line-height:1.8;
+}
+.voice::before{
+  content:"👩"; position:absolute; left:15px; top:17px; font-size:1.4rem;
+}
+.voice b{ color:var(--pink-dp); }
+
+/* ===== 講師 ===== */
+.prof{
+  max-width:580px; margin:0 auto; background:var(--card);
+  border-radius:22px; box-shadow:var(--shadow-l); padding:30px 22px; text-align:center;
+  border:3px solid #fff;
+}
+.prof .photo{
+  width:140px; height:140px; border-radius:50%; object-fit:cover; margin:0 auto 16px;
+  border:5px solid #fff; box-shadow:0 12px 26px rgba(200,110,150,.3);
+}
+.prof .role{ font-family:var(--round); font-weight:700; font-size:.95rem; color:var(--gold); margin-bottom:4px; }
+.prof .name{ font-family:var(--round); font-weight:900; font-size:1.75rem; color:var(--pink-dp); }
+.prof .creds{
+  font-size:.97rem; color:var(--ink-sub); line-height:1.95;
+  background:var(--paper3); border-radius:14px; padding:14px 16px; margin:16px 0;
+}
+.prof .story{ text-align:left; font-size:1rem; }
+.book{
+  display:flex; gap:14px; align-items:center; text-align:left;
+  background:var(--paper2); border-radius:14px; padding:14px 15px; margin-top:18px;
+}
+.book img{ width:72px; flex:0 0 72px; border-radius:4px; box-shadow:0 6px 14px rgba(150,90,110,.25); }
+.book .t{ font-family:var(--round); font-weight:700; font-size:1.06rem; color:var(--pink-dp); line-height:1.5; }
+.book .s{
+  display:inline-block; font-size:.76rem; color:#fff; font-family:var(--round); font-weight:700;
+  background:var(--gold); padding:2px 10px; border-radius:100px; margin-top:6px;
+}
+.host{
+  max-width:580px; margin:16px auto 0; background:var(--card);
+  border-radius:18px; box-shadow:var(--shadow); padding:18px 20px; text-align:center;
+}
+.host .l{ font-family:var(--round); font-weight:700; font-size:.88rem; color:var(--gold); }
+.host .n{ font-family:var(--round); font-weight:900; font-size:1.3rem; color:var(--pink-dp); margin-top:2px; }
+
+/* ===== 開催概要 ===== */
+.detail{
+  max-width:580px; margin:0 auto; background:var(--card);
+  border-radius:20px; box-shadow:var(--shadow); overflow:hidden; border:2px solid var(--pink-lt);
+}
+.detail .row{ display:flex; border-bottom:2px dotted var(--line); font-size:1rem; }
+.detail .row:last-child{ border-bottom:none; }
+.detail .k{
+  flex:0 0 96px; background:var(--paper3); padding:14px 12px;
+  font-family:var(--round); font-weight:700; font-size:.92rem; color:var(--pink-dp);
+}
+.detail .v{ flex:1; padding:14px 16px; line-height:1.8; }
+.detail .v small{ color:var(--ink-sub); font-size:.88rem; }
+.detail .v a{ color:var(--pink-dp); }
+.detail .fee{ font-family:var(--round); font-weight:900; font-size:1.5rem; color:var(--pink-dp); }
+.caution{
+  max-width:580px; margin:16px auto 0; background:#fff6f8;
+  border:2px solid var(--pink-lt); border-radius:16px; padding:16px 18px;
+  font-size:.95rem; color:var(--ink-sub); line-height:1.85;
+}
+.caution b{ color:var(--pink-dp); }
+
+/* ===== お花のかざり =====
+   色を変えたいときは、下の color の値を変えてください */
+.fl{ display:inline-block; vertical-align:middle; }
+.fl.pink{ color:#f8c7d6; }
+.fl.deep{ color:#f0a2bd; }
+.fl.gold{ color:#f0dca8; }
+
+/* ヒーローの四すみに置くお花 */
+.hero .deco{ position:absolute; pointer-events:none; z-index:0; }
+.hero .deco.tl{ top:250px; left:-16px; }
+.hero .deco.tr{ top:266px; right:-18px; }
+.hero .deco.bl{ bottom:-10px; left:-20px; }
+.hero .deco.br{ bottom:6px; right:-10px; }
+.hero .deco .fl{ filter:drop-shadow(0 2px 4px rgba(200,130,160,.18)); }
+
+/* 見出しの上に置くお花の区切り */
+.fdiv{
+  display:flex; align-items:center; justify-content:center; gap:8px;
+  margin-bottom:14px;
+}
+.fdiv .bar{ width:36px; height:2px; background:#f6d9e2; border-radius:2px; }
+
+/* 会場の写真2枚 */
+.photos{ display:grid; grid-template-columns:1fr 1fr; gap:12px; max-width:600px; margin:0 auto; }
+.photos figure{
+  background:var(--card); border-radius:16px; overflow:hidden;
+  box-shadow:var(--shadow-l); border:4px solid #fff;
+}
+.photos img{ width:100%; height:auto; aspect-ratio:4/3; object-fit:cover; }
+.photos figcaption{
+  padding:10px 10px 12px; text-align:center;
+  font-family:var(--round); font-weight:700; font-size:.88rem;
+  color:var(--pink-dp); line-height:1.5;
+}
+
+/* 全体の画像 */
+.flyer{
+  max-width:460px; margin:0 auto; border-radius:14px; overflow:hidden;
+  box-shadow:var(--shadow-l); border:6px solid #fff;
+}
+
+/* ===== FAQ ===== */
+.faq{ max-width:600px; margin:0 auto; }
+.faq details{
+  background:var(--card); border-radius:16px; box-shadow:var(--shadow);
+  margin-bottom:10px; overflow:hidden; border:2px solid var(--pink-lt);
+}
+.faq summary{
+  cursor:pointer; list-style:none; padding:16px 42px 16px 48px; position:relative;
+  font-family:var(--round); font-weight:700; font-size:1.06rem; color:var(--ink);
+}
+.faq summary::-webkit-details-marker{ display:none; }
+.faq summary::before{
+  content:"Q"; position:absolute; left:18px; top:14px;
+  font-family:var(--round); font-weight:900; color:var(--pink); font-size:1.2rem;
+}
+.faq summary::after{ content:"＋"; position:absolute; right:18px; top:16px; color:var(--pink); font-weight:700; }
+.faq details[open] summary::after{ content:"－"; }
+.faq .a{ padding:0 20px 18px 48px; font-size:.98rem; color:var(--ink-sub); line-height:1.95; }
+
+/* ===== さいご ===== */
+.closing{
+  text-align:center; padding:52px 0 58px;
+  background:linear-gradient(190deg,#fff8fa 0%,#ffe3ee 100%);
+}
+.closing .msg{
+  font-family:var(--round); font-weight:700; font-size:1.2rem;
+  color:var(--pink-dp); line-height:2.05; margin-bottom:26px;
+}
+.closing .sign{ font-size:.96rem; color:var(--ink-sub); margin-top:24px; line-height:1.9; }
+
+footer{
+  background:#fff; color:var(--ink-sub); text-align:center;
+  padding:24px 0; font-size:.85rem; border-top:2px solid var(--pink-lt);
+  font-family:var(--round); font-weight:500;
+}
+
+@media (min-width:760px){
+  body{ font-size:19.5px; padding-bottom:0; }
+  .sticky{ display:none; }
+  .wrap{ max-width:900px; }
+  .hero{ padding:88px 0 56px; }
+  .headimg{ max-width:780px; }
+  .hero h1 .l1{ font-size:3.6rem; }
+  .hero h1 .l2{ font-size:1.5rem; }
+  h2{ font-size:2rem; }
+  section{ padding:72px 0; }
+  .know{ grid-template-columns:repeat(4,1fr); max-width:860px; }
+  .voices{ grid-template-columns:1fr 1fr; max-width:860px; }
+}
+
+/* ===== 2Days用に足したもの ===== */
+.hero h1 .l0{ display:block; font-size:1.05rem; line-height:1.8; color:var(--ink-sub); font-weight:700; margin-bottom:12px; }
+.hero h1 .l1{ font-size:2.1rem; }
+.hero h1 .l1 small{ display:block; font-size:1.05rem; color:var(--gold); letter-spacing:.06em; margin-bottom:4px; }
+.hero .calls{ list-style:none; max-width:520px; margin:0 auto 18px; text-align:center; }
+.hero .calls li{ font-size:1rem; color:var(--ink-sub); line-height:1.9; }
+.hero .safe{ font-family:var(--round); font-weight:900; font-size:1.35rem; color:var(--pink-dp); margin:6px 0 10px; }
+.hero .promise{ font-size:1rem; color:var(--ink-sub); max-width:540px; margin:0 auto 22px; line-height:1.9; }
+.hero .method{ font-family:var(--round); font-weight:700; font-size:.88rem; color:var(--gold); margin-top:14px; letter-spacing:.04em; }
+
+.days2{ display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:6px; }
+.days2 .d{ background:var(--paper3); border-radius:14px; padding:12px 6px; }
+.days2 .d .no{ font-family:var(--round); font-weight:700; font-size:.8rem; color:#fff; background:var(--pink); display:inline-block; padding:2px 12px; border-radius:100px; }
+.days2 .d .dt{ font-family:var(--round); font-weight:900; font-size:2.1rem; line-height:1.2; color:var(--pink); }
+.days2 .d .dt small{ font-size:.95rem; margin-left:2px; }
+.days2 .d .tm{ font-family:var(--round); font-weight:700; font-size:1rem; color:var(--ink); }
+.when .free{ margin-top:14px; padding-top:14px; border-top:2px dotted var(--line); font-family:var(--round); font-weight:900; font-size:1.7rem; color:var(--pink-dp); }
+.when .free small{ display:block; font-family:var(--body); font-size:.82rem; color:var(--ink-sub); font-weight:600; margin-top:2px; }
+
+.daycard{ max-width:600px; margin:0 auto 16px; background:var(--card); border-radius:22px; box-shadow:var(--shadow-l); border:3px solid #fff; padding:24px 20px 20px; }
+.daycard .badge2{ display:inline-block; font-family:var(--round); font-weight:700; font-size:.82rem; color:#fff; background:var(--pink); padding:3px 16px; border-radius:100px; margin-bottom:8px; }
+.daycard h3{ font-family:var(--round); font-weight:900; font-size:1.35rem; line-height:1.55; color:var(--pink-dp); margin-bottom:4px; }
+.daycard .kw{ font-size:.92rem; color:var(--gold); font-family:var(--round); font-weight:700; margin-bottom:14px; }
+.tt{ list-style:none; }
+.tt li{ display:flex; gap:12px; align-items:flex-start; padding:10px 0; border-top:2px dotted var(--line); font-size:.98rem; line-height:1.7; }
+.tt li:first-child{ border-top:none; }
+.tt .m{ flex:0 0 52px; text-align:center; font-family:var(--round); font-weight:900; font-size:.82rem; color:var(--pink-dp); background:var(--paper3); border-radius:100px; padding:2px 0; margin-top:3px; }
+.tt b{ color:var(--ink); }
+
+.note-small{ text-align:center; font-size:.85rem; color:var(--ink-sub); margin-top:14px; line-height:1.8; font-weight:500; }
+
+.hero .deco.tl{ top:70px; }
+.hero .deco.tr{ top:84px; }
+@media (max-width:420px){
+  .hero h1 .l1{ font-size:1.75rem; }
+  .days2 .d .dt{ font-size:1.8rem; }
+}
+@media (min-width:760px){
+  .hero h1 .l1{ font-size:2.9rem; }
+}
+</style>
+</head>
+<body>
+<script>document.documentElement.className += ' js';</script>
+
+<!-- お花の形（ここで1回だけ作って、ページのあちこちで使いまわします） -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="flower" viewBox="0 0 100 100">
+    <g fill="currentColor">
+      <ellipse cx="50" cy="25" rx="15" ry="22"/>
+      <ellipse cx="50" cy="25" rx="15" ry="22" transform="rotate(72 50 50)"/>
+      <ellipse cx="50" cy="25" rx="15" ry="22" transform="rotate(144 50 50)"/>
+      <ellipse cx="50" cy="25" rx="15" ry="22" transform="rotate(216 50 50)"/>
+      <ellipse cx="50" cy="25" rx="15" ry="22" transform="rotate(288 50 50)"/>
+    </g>
+    <circle cx="50" cy="50" r="11" fill="#f2cf82"/>
+    <circle cx="50" cy="50" r="5" fill="#e8b85c"/>
+  </symbol>
+  <symbol id="leaf" viewBox="0 0 100 100">
+    <path d="M50 12 C78 30 78 70 50 88 C22 70 22 30 50 12 Z" fill="currentColor"/>
+    <path d="M50 16 L50 84" stroke="rgba(255,255,255,.55)" stroke-width="3" fill="none"/>
+  </symbol>
+</svg>
+
+<!-- 上のバー -->
+<div class="topbar">
+  <div class="ttl">本当の私に出会う2Days<small>10/26（月）・10/28（水）21時〜</small></div>
+  <a class="mini apply" href="#">無料で参加</a>
+</div>
+
+
+<!-- ============================================================
+     1. ファーストビュー
+     ============================================================ -->
+<header class="hero">
+
+  <div class="deco tl">
+    <svg class="fl deep" width="62" height="62"><use href="#flower"/></svg>
+    <svg class="fl pink" width="40" height="40" style="margin-left:-12px"><use href="#flower"/></svg>
+    <svg class="fl" width="30" height="30" style="color:#cfe3c3;margin-left:-8px"><use href="#leaf"/></svg>
+  </div>
+  <div class="deco tr">
+    <svg class="fl" width="30" height="30" style="color:#cfe3c3;margin-right:-6px"><use href="#leaf"/></svg>
+    <svg class="fl pink" width="46" height="46"><use href="#flower"/></svg>
+    <svg class="fl gold" width="34" height="34" style="margin-left:-10px"><use href="#flower"/></svg>
+  </div>
+  <div class="deco bl">
+    <svg class="fl pink" width="52" height="52"><use href="#flower"/></svg>
+    <svg class="fl gold" width="30" height="30" style="margin-left:-10px"><use href="#flower"/></svg>
+  </div>
+  <div class="deco br">
+    <svg class="fl" width="28" height="28" style="color:#cfe3c3"><use href="#leaf"/></svg>
+    <svg class="fl deep" width="44" height="44" style="margin-left:-8px"><use href="#flower"/></svg>
+  </div>
+
+  <div class="wrap">
+    <span class="ribbon">参加無料｜Zoomで2日間</span>
+
+    <h1>
+      <span class="l0">仕事も、子育ても、家族のことも。<br>ずっと頑張ってきたあなたへ</span>
+      <span class="l1"><small>本当の私に出会う♡</small>使命と望みを見つけて、<br>叶える私になる2Days</span>
+    </h1>
+
+    <ul class="calls">
+      <li>本当は、何がしたいのか わからない。</li>
+      <li>次の一歩を決めたいのに、動けない。</li>
+      <li>やりたいことはたくさんあるのに、行動できない。</li>
+      <li>今の自分に、何ができるんだろう。</li>
+    </ul>
+
+    <p class="safe">そんなままでも、大丈夫です。</p>
+    <p class="promise">
+      「もっと頑張る」の前に、本音に戻る。<br>
+      安心感の中で本音がわかると、自分で次の一歩を決められます。<br>
+      その先で、現実がスルッと動き出した方もいます。
+    </p>
+
+    <div class="when">
+      <div class="days2">
+        <div class="d"><span class="no">DAY 1</span><div class="dt">10/26<small>（月）</small></div><div class="tm">21:00〜22:30</div></div>
+        <div class="d"><span class="no">DAY 2</span><div class="dt">10/28<small>（水）</small></div><div class="tm">21:00〜22:30</div></div>
+      </div>
+      <div class="place"><b>Zoom</b>で開催<small>おうちから、スマホやパソコンで参加できます</small></div>
+      <div class="free">参加無料<small>各日 90分</small></div>
+    </div>
+
+    <a class="btn apply" href="#">無料で参加する<small>ボタンを押すと、お申し込みの画面がひらきます</small></a>
+
+    <p class="method">脳科学 × インナーチャイルド × 魂の個性｜ハピ脳®メソッド</p>
+  </div>
+</header>
+
+
+<!-- ============================================================
+     2. こんな方へ
+     ============================================================ -->
+<section class="bg3">
+  <div class="wrap fade">
+    <div class="fdiv"><span class="bar"></span><svg class="fl pink" width="20" height="20"><use href="#flower"/></svg><svg class="fl deep" width="27" height="27"><use href="#flower"/></svg><svg class="fl gold" width="20" height="20"><use href="#flower"/></svg><span class="bar"></span></div>
+    <h2>こんな気持ちが<br>ありませんか？</h2>
+
+    <ul class="worry">
+      <li>がんばってきたのに、なぜか前に進めない</li>
+      <li>本当は何をしたいのか、わからない</li>
+      <li>自信がなくて、人の目が気になる</li>
+      <li>やりたいことはあるのに、動けずにいる</li>
+      <li>自分の使命って何だろう、と思う</li>
+      <li>人生の後半を、もっと自由に楽しみたい</li>
+    </ul>
+
+    <p class="lead" style="margin-top:24px;">
+      ひとつでも当てはまったら、<br><strong>この2日間は、あなたのための時間です。</strong><br>
+      答えは、もうあなたの中にあります。<br>それを思い出す時間にしましょう。
+    </p>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     3. 2日間の内容
+     ============================================================ -->
+<section>
+  <div class="wrap fade">
+    <div class="fdiv"><span class="bar"></span><svg class="fl pink" width="20" height="20"><use href="#flower"/></svg><svg class="fl deep" width="27" height="27"><use href="#flower"/></svg><svg class="fl gold" width="20" height="20"><use href="#flower"/></svg><span class="bar"></span></div>
+    <h2>2日間のテーマ</h2>
+    <p class="lead">1日目は「思い出す」。2日目は「言葉にして、体感する」。</p>
+
+    <div class="daycard">
+      <span class="badge2">DAY 1｜10月26日（月）21:00〜</span>
+      <h3>本当の私を思い出す♡</h3>
+    </div>
+
+    <div class="daycard">
+      <span class="badge2">DAY 2｜10月28日（水）21:00〜</span>
+      <h3>使命を見つけて、<br>叶える私になる♡</h3>
+    </div>
+
+    <div class="cta">
+      <p class="t">本当の私に、会いにいきませんか。</p>
+      <a class="btn apply" href="#">無料で参加する</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     4. 参加された方の声
+     ============================================================ -->
+<section class="bg2">
+  <div class="wrap fade">
+    <div class="fdiv"><span class="bar"></span><svg class="fl pink" width="20" height="20"><use href="#flower"/></svg><svg class="fl deep" width="27" height="27"><use href="#flower"/></svg><svg class="fl gold" width="20" height="20"><use href="#flower"/></svg><span class="bar"></span></div>
+    <h2>参加された方の声</h2>
+    <p class="lead">これまでのセミナーに参加された方の感想です。</p>
+
+    <!-- ★ご本人の了承をとったものだけ載せます。名前は出しません -->
+    <div class="vlist">
+      <div class="vbox">AIでここまで簡単に未来が見えるとは<br><u>びっくりです！</u></div>
+      <div class="vbox">自己流でやっていたのと全然違うので<br><u>感動しました！</u></div>
+      <div class="vbox">夢が叶わない理由と、どうすればいいかおしえてもらえたので、<u>さっそく実践します！</u></div>
+      <div class="vbox">思ってもみなかった未来が見えたので、<br><u>驚きました！</u></div>
+      <div class="vbox">とにかく<u>楽しい！</u><br>いっこさんのナビがいい！</div>
+    </div>
+    <p class="note-small">※個人の感想です。効果や結果を約束するものではありません。</p>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     5. 講師
+     ============================================================ -->
+<section>
+  <div class="wrap fade">
+    <div class="fdiv"><span class="bar"></span><svg class="fl pink" width="20" height="20"><use href="#flower"/></svg><svg class="fl deep" width="27" height="27"><use href="#flower"/></svg><svg class="fl gold" width="20" height="20"><use href="#flower"/></svg><span class="bar"></span></div>
+    <h2>講師</h2>
+
+    <div class="prof">
+      <img class="photo" src="photo.jpg" alt="蘭野いっこ">
+      <div class="role">ハピ脳® メソッド 開発者</div>
+      <div class="name">蘭野 いっこ</div>
+
+      <div class="creds">
+        花咲きアカデミー 代表<br>
+        『幸せ脳へのふしぎな旅』著者　Amazon 5部門1位<br>
+        コミュニティ「ハピ脳で幸せ創造」主催（500名以上）<br>
+        毎朝7時半からのライブ配信を2年半継続中
+      </div>
+
+      <div class="story">
+        <p>「優秀でいなければ」「いい人でいなければ」。そう思って生きてきて、うつと対人恐怖になりました。娘は不登校になり、家から出られなくなりました。</p>
+        <p>そこから、心理学・脳科学・潜在意識・インナーチャイルドを学び、気づいたのです。<span class="mk">がんばる順番が、逆だった</span>と。</p>
+        <p>まず安心すること。そこから本音が出てくること。順番を変えたら、人生が動きはじめました。その方法をまとめたものが<strong>ハピ脳®メソッド</strong>です。</p>
+      </div>
+
+      <div class="book">
+        <img src="book.jpg" alt="幸せ脳へのふしぎな旅">
+        <div>
+          <div class="t">幸せ脳へのふしぎな旅</div>
+          <span class="s">Amazon 5部門1位</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     6. お申し込みの流れ
+     ============================================================ -->
+<section class="bg3">
+  <div class="wrap fade">
+    <h2>お申し込みの流れ<span style="display:block;font-size:.95rem;color:var(--ink-sub);font-weight:500;margin-top:8px;">1分で終わります</span></h2>
+
+    <div class="flow">
+      <div class="flowstep">
+        <span class="n">STEP 1</span>
+        <h3>ボタンを押す</h3>
+        <p>このページの「無料で参加する」を押すと、お申し込みの画面がひらきます。</p>
+      </div>
+      <p class="flowarrow">▼</p>
+      <div class="flowstep">
+        <span class="n">STEP 2</span>
+        <h3>お名前とメールアドレスを入れる</h3>
+        <p>お申し込みの画面に、ご記入ください。参加費はかかりません。</p>
+      </div>
+      <p class="flowarrow">▼</p>
+      <div class="flowstep">
+        <span class="n">STEP 3</span>
+        <h3>公式LINEにご登録ください</h3>
+        <p>ZoomのURLなど、当日までのご案内は<strong>公式LINE</strong>でお送りします。<br><small>※すでにお友だちの方は、そのままで大丈夫です</small></p>
+      </div>
+    </div>
+
+    <div class="cta">
+      <p class="t">10月26日、画面の向こうでお待ちしています♡</p>
+      <a class="btn apply" href="#">無料で参加する</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     7. 開催概要
+     ============================================================ -->
+<section>
+  <div class="wrap fade">
+    <div class="fdiv"><span class="bar"></span><svg class="fl pink" width="20" height="20"><use href="#flower"/></svg><svg class="fl deep" width="27" height="27"><use href="#flower"/></svg><svg class="fl gold" width="20" height="20"><use href="#flower"/></svg><span class="bar"></span></div>
+    <h2>開催概要</h2>
+
+    <div class="detail">
+      <div class="row"><div class="k">日　時</div><div class="v">
+        <b>DAY 1</b>　2026年10月26日（月）21:00〜22:30<br>
+        <b>DAY 2</b>　2026年10月28日（水）21:00〜22:30<br>
+        <small>※各日90分／2日間のセットです</small></div></div>
+      <div class="row"><div class="k">場　所</div><div class="v"><b>Zoom</b>（オンライン）<br><small>お申し込みの方に、公式LINEでURLをお送りします</small></div></div>
+      <div class="row"><div class="k">参加費</div><div class="v"><span class="fee">無料</span></div></div>
+      <div class="row"><div class="k">講　師</div><div class="v">蘭野 いっこ（花咲きアカデミー 代表）</div></div>
+      <div class="row"><div class="k">お持ち物</div><div class="v">スマートフォンかパソコン<br><small>・筆記用具（紙とペン）があると、ワークがしやすいです</small></div></div>
+      <div class="row"><div class="k">お問合せ</div><div class="v">公式LINEより承ります</div></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     8. よくあるご質問
+     ============================================================ -->
+<section class="bg2">
+  <div class="wrap fade">
+    <div class="fdiv"><span class="bar"></span><svg class="fl pink" width="20" height="20"><use href="#flower"/></svg><svg class="fl deep" width="27" height="27"><use href="#flower"/></svg><svg class="fl gold" width="20" height="20"><use href="#flower"/></svg><span class="bar"></span></div>
+    <h2>よくあるご質問</h2>
+
+    <div class="faq">
+      <details open>
+        <summary>本当に無料ですか？</summary>
+        <div class="a">はい、<strong>参加費はかかりません</strong>。2日間とも無料でご参加いただけます。</div>
+      </details>
+      <details>
+        <summary>やりたいことが、まだわかりません。</summary>
+        <div class="a">その状態で大丈夫です。<strong>むしろ、そういう方のための2日間</strong>です。何かを決めてから来る必要はありません。</div>
+      </details>
+      <details>
+        <summary>AIを使ったことがありません。</summary>
+        <div class="a">大丈夫です。2日目にAIを使う時間がありますが、<strong>日本語で話しかけるだけ</strong>。むずかしい操作はありません。準備でわからないことは、公式LINEでご質問ください。</div>
+      </details>
+      <details>
+        <summary>ひとりでの参加でも大丈夫ですか？</summary>
+        <div class="a">もちろんです。おひとりでの参加がほとんどです。話したくないことは、話さなくて大丈夫です。</div>
+      </details>
+      <details>
+        <summary>スマホだけでも参加できますか？</summary>
+        <div class="a">できます。ZoomのアプリをスマホにいれればOKです。</div>
+      </details>
+      <details>
+        <summary>しつこい勧誘はありますか？</summary>
+        <div class="a">ありません。2日目の最後に、個別相談のご案内をします。<strong>ご希望の方だけ</strong>お申し込みください。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     9. さいごに
+     ============================================================ -->
+<section class="closing">
+  <div class="wrap fade">
+    <div class="fdiv"><span class="bar"></span><svg class="fl pink" width="22" height="22"><use href="#flower"/></svg><svg class="fl deep" width="30" height="30"><use href="#flower"/></svg><svg class="fl gold" width="22" height="22"><use href="#flower"/></svg><span class="bar"></span></div>
+    <p class="msg">
+      「本当は、どうしたい？」<br>
+      すぐに答えられなくても、大丈夫。<br><br>
+      安心できる場所で、<br>
+      ゆっくり思い出していきましょう。<br><br>
+      10月26日、お待ちしています♡
+    </p>
+
+    <a class="btn apply" href="#">無料で参加する</a>
+    <a class="btn line" id="lineBtn" href="#">公式LINEで質問する</a>
+
+    <p class="sign">
+      講師　花咲きアカデミー　蘭野いっこ
+    </p>
+  </div>
+</section>
+
+<footer>本当の私に出会う2Days｜2026年10月26日（月）・28日（水）</footer>
+
+<div class="sticky">
+  <a class="btn apply" href="#">無料で参加する</a>
+</div>
+
+<script>
+// ★ここに、お申し込みのリンク（UTAGEなど）を入れると、ページの中のボタンぜんぶに入ります
+var APPLY_URL = "";
+// ★公式LINEのリンク
+var LINE_URL  = "https://lin.ee/v4imfbp";
+
+(function(){
+  document.querySelectorAll('a.apply').forEach(function(a){
+    if(APPLY_URL){ a.href = APPLY_URL; } else { a.addEventListener('click', function(e){ e.preventDefault(); }); }
+  });
+  var lb = document.getElementById('lineBtn');
+  if(lb){ if(LINE_URL){ lb.href = LINE_URL; } else { lb.style.display = 'none'; } }
+
+  var items = document.querySelectorAll('.fade');
+  if(!('IntersectionObserver' in window)){
+    items.forEach(function(el){ el.classList.add('on'); }); return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){ e.target.classList.add('on'); io.unobserve(e.target); }
+    });
+  }, { threshold:0.08 });
+  items.forEach(function(el){ io.observe(el); });
+  setTimeout(function(){
+    if(document.querySelectorAll('.fade.on').length === 0){
+      items.forEach(function(el){ el.classList.add('on'); });
+    }
+  }, 2000);
+})();
+</script>
+
+</body>
+</html>
