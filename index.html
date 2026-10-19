@@ -143,6 +143,7 @@ html.js .fade.on{ opacity:1; transform:none; }
 .ticket .head .dt{ font-family:var(--serif); font-weight:700; font-size:.92rem; color:#f6d9e3; margin:2px 0 8px; }
 .ticket .head h3{ font-family:var(--serif); font-weight:800; font-size:1.3rem; line-height:1.65; text-wrap:balance; }
 .ticket .body{ padding:10px 20px 14px; }
+.ticket .theme{ text-align:center; margin:10px 0 6px; font-family:var(--serif); font-weight:700; color:var(--berry,#a8265f); font-size:1rem; }
 .tt{ list-style:none; }
 .tt li{ display:flex; gap:12px; align-items:flex-start; padding:12px 0; border-bottom:1px dotted var(--line); font-size:.95rem; line-height:1.75; }
 .tt li:last-child{ border-bottom:none; }
@@ -193,6 +194,76 @@ html.js .fade.on{ opacity:1; transform:none; }
 .closing .msg em{ font-style:normal; color:var(--gold); }
 .closing .sign{ font-size:.9rem; margin-top:28px; color:#f1cbd9; }
 footer{ text-align:center; padding:22px 0; font-size:.8rem; color:#d8b9c4; background:#2e0a1c; font-family:var(--en); letter-spacing:.16em; }
+
+/* ============================================================
+   やわらかいピンク版（会員サイトのバナーの色）
+   ※元の濃いワインピンクに戻したいときは、ここから「ピンク版ここまで」までを消す
+   ============================================================ */
+:root{
+  --plum2:   #8a2050;   /* 文字に使うベリー色 */
+  --berry:   #a8265f;
+  --softpk:  #fae2e7;   /* バナーのうすピンク */
+  --softpk2: #f9d3dc;
+  --peach:   #f6c9c2;
+}
+.sticky{ background:rgba(255,240,244,.96); border-top:1px solid rgba(201,161,82,.5); }
+
+/* 一番上 */
+.hero{
+  color:var(--ink);
+  background:
+    radial-gradient(60% 40% at 8% 78%, rgba(246,196,189,.85) 0%, rgba(246,196,189,0) 70%),
+    radial-gradient(50% 30% at 95% 20%, rgba(255,255,255,.9) 0%, rgba(255,255,255,0) 70%),
+    radial-gradient(70% 38% at 50% 0%, rgba(255,255,255,.7) 0%, rgba(255,255,255,0) 70%),
+    linear-gradient(180deg,#fbe4ea 0%,#f9d6df 55%,#f8cfd6 100%);
+}
+.hero .bk{ background:radial-gradient(circle, rgba(255,255,255,.95), rgba(255,255,255,0) 70%); }
+.hero .place{ color:var(--gold-dp); }
+.hero .hook{ color:var(--ink-sub); }
+.hero h1{ color:var(--berry); text-shadow:0 2px 14px rgba(255,255,255,.7); }
+.hero h1 em{ color:var(--berry); }
+.hero .promise{ color:var(--ink); }
+.hero .promise b{ color:var(--berry); background:linear-gradient(transparent 68%, rgba(255,255,255,.85) 68%); }
+.chips span{ color:var(--berry); background:rgba(255,255,255,.7); border-color:rgba(201,161,82,.8); }
+.hero .sub{ color:var(--gold-dp); font-size:.92rem; letter-spacing:.05em; }
+.when{ background:rgba(255,255,255,.72); border-color:rgba(201,161,82,.8); box-shadow:0 14px 30px rgba(190,90,130,.14); }
+.when .d{ border-color:rgba(201,161,82,.5); background:rgba(255,255,255,.7); }
+.when .d .no{ color:var(--gold-dp); }
+.when .d .dt{ color:var(--berry); }
+.when .d .dt small{ color:var(--gold-dp); }
+.when .d .tm{ color:var(--ink); }
+.when .free{ color:var(--berry); }
+.when .meta{ color:var(--ink-sub); }
+.btn.gold{ box-shadow:0 12px 26px rgba(168,128,58,.32); }
+
+/* ラズベリーだった帯 → やわらかいピンク */
+.rasp{ background:linear-gradient(160deg,#f8cbd6 0%,#f5bccb 55%,#f6c6c0 100%); color:var(--ink); }
+.rasp h2, .dark h2{ color:var(--berry); }
+.rasp .eyebrow, .dark .eyebrow{ color:var(--gold-dp); }
+.rasp strong, .dark strong{ color:var(--berry); }
+.exp .it{ background:rgba(255,255,255,.62); border-color:rgba(201,161,82,.7); box-shadow:0 10px 22px rgba(190,90,130,.12); }
+.exp .it .en{ color:var(--gold-dp); }
+.exp .it .jp{ color:var(--ink); }
+.exp .it .jp small{ color:var(--ink-sub); }
+
+/* 濃い帯だったところ（声） → うすピンク */
+.dark{ background:linear-gradient(160deg,#fde9ee,#f9d6df); color:var(--ink); }
+.voice{ background:rgba(255,255,255,.7); }
+.voice u{ color:var(--berry); }
+
+/* チケットの見出し */
+.ticket .head{ background:linear-gradient(160deg,#cf5a8a,#a8265f); }
+
+/* さいご・フッター */
+.closing{
+  color:var(--ink);
+  background:radial-gradient(70% 50% at 50% 0%, rgba(255,255,255,.8), rgba(255,255,255,0) 70%),
+             linear-gradient(190deg,#fbe4ea 0%,#f7c6d2 100%);
+}
+.closing .msg em{ color:var(--berry); }
+.closing .sign{ color:var(--ink-sub); }
+footer{ background:#f3cdd6; color:var(--ink-sub); }
+/* ===== ピンク版ここまで ===== */
 
 @media (max-width:420px){
   .hero h1{ font-size:1.85rem; }
@@ -329,7 +400,7 @@ footer{ text-align:center; padding:22px 0; font-size:.8rem; color:#d8b9c4; backg
 <section class="sand">
   <div class="wrap fade">
     <span class="eyebrow">Program</span>
-    <h2>2日間の流れ</h2>
+    <h2>2日間のテーマ</h2>
     <div class="gline"></div>
 
     <div class="ticket">
@@ -338,16 +409,7 @@ footer{ text-align:center; padding:22px 0; font-size:.8rem; color:#d8b9c4; backg
         <div class="dt">10月26日（月）21:00〜22:30</div>
         <h3>本当のわたしと<br>なかよくなる</h3>
       </div>
-      <div class="body">
-        <ul class="tt">
-          <li><span class="m">10分</span><span><b>オープニング</b>｜ハピ脳誕生物語</span></li>
-          <li><span class="m">15分</span><span><b>なぜ、がまんや頑張りすぎをしてしまうの？</b></span></li>
-          <li><span class="m">25分</span><span><span class="wk">Work 1</span><b>がまんしてきた気持ちをキャッチ</b>｜本当は、どうしたかった？ インナーチャイルドによりそう</span></li>
-          <li><span class="m">20分</span><span><span class="wk">Work 2</span><b>過去の「好き」と「あきらめたこと」</b>｜つい、やってしまうことは才能。あきらめたことは想い。そのままの私を受け入れる</span></li>
-          <li><span class="m">10分</span><span><b>シェア</b>｜少人数で気づきを分かち合います</span></li>
-          <li><span class="m">10分</span><span><b>まとめ</b>｜Day2への宿題</span></li>
-        </ul>
-      </div>
+      <div class="body"><p class="theme">安心感（インナーチャイルド・自己受容）</p></div>
     </div>
 
     <div class="ticket">
@@ -356,20 +418,10 @@ footer{ text-align:center; padding:22px 0; font-size:.8rem; color:#d8b9c4; backg
         <div class="dt">10月28日（水）21:00〜22:30</div>
         <h3>脳と潜在意識を味方に、<br>枠をはずした未来を描く</h3>
       </div>
-      <div class="body">
-        <ul class="tt">
-          <li><span class="m">10分</span><span><b>Day1の振り返り</b>｜からだがゆるむ体験</span></li>
-          <li><span class="m">15分</span><span><b>脳と潜在意識のしくみ</b>｜安心感・脳の使い方・波動</span></li>
-          <li><span class="m">15分</span><span><span class="wk">Work 3</span><b>思い込みの「枠」を見つける</b>｜お金・時間・仕事・家族・自分の能力・人の目</span></li>
-          <li><span class="m">20分</span><span><span class="wk">Work 4</span><b>枠をはずした未来</b>｜「もし、全部OKだったら？」を書き出す</span></li>
-          <li><span class="m">15分</span><span><b>未来ワープ</b>｜五感で体感して、オーダーする</span></li>
-          <li><span class="m">5分</span><span><b>次の一歩を宣言</b></span></li>
-          <li><span class="m">10分</span><span><b>個別相談のご案内</b></span></li>
-        </ul>
-      </div>
+      <div class="body"><p class="theme">脳と潜在意識・枠をはずした未来</p></div>
     </div>
 
-    <p class="note" style="color:var(--ink-sub)">※話したくないことは、話さなくて大丈夫です。<br>※内容は、当日の様子で少し変わることがあります。</p>
+    <p class="note" style="color:var(--ink-sub)">※くわしい内容は、当日のお楽しみです♡<br>※話したくないことは、話さなくて大丈夫です。</p>
 
     <div class="bonus">ご参加の方には、うれしい特典をご用意します♡</div>
 
