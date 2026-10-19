@@ -278,6 +278,72 @@ footer{ background:#f3cdd6; color:var(--ink-sub); }
   section{ padding:100px 0; }
   .exp{ grid-template-columns:repeat(4,1fr); max-width:880px; }
 }
+
+/* ============================================================
+   読みやすい文字版（50代・60代の方にも読みやすく：大きく・太く）
+   ※元の大きさに戻したいときは、ここから「読みやすい文字版ここまで」までを消す
+   ============================================================ */
+:root{ --ink:#2a1920; --ink-sub:#52393f; }
+body{ font-size:19px; font-weight:600; line-height:2.05; }
+.eyebrow{ font-size:1rem; font-weight:700; }
+h2{ font-size:1.75rem; font-weight:800; }
+.lead{ font-size:1.12rem; font-weight:600; }
+.note{ font-size:1rem; font-weight:600; opacity:1; }
+.btn{ font-size:1.3rem; font-weight:800; padding:20px 20px; }
+.btn small{ font-size:.9rem; font-weight:600; }
+.sticky .btn{ font-size:1.15rem; }
+
+.hero .place{ font-size:.9rem; font-weight:700; }
+.hero .hook{ font-size:1.15rem; font-weight:700; }
+.hero h1{ font-size:2.35rem; }
+.hero .promise{ font-size:1.25rem; font-weight:700; }
+.chips span{ font-size:1.05rem; font-weight:800; }
+.hero .sub{ font-size:1rem; font-weight:700; }
+.when .d .no{ font-size:.9rem; font-weight:700; }
+.when .d .dt{ font-size:2.1rem; }
+.when .d .tm{ font-size:1.08rem; font-weight:800; }
+.when .row2{ font-size:1.1rem; }
+.when .free{ font-size:1.5rem; }
+.when .meta{ font-size:.98rem; font-weight:600; }
+
+.worry li{ font-size:1.12rem; font-weight:700; padding:15px 6px 15px 36px; }
+.bignote{ font-size:1.4rem; }
+.exp .it .en{ font-size:.9rem; font-weight:700; }
+.exp .it .jp{ font-size:1.15rem; font-weight:800; }
+.exp .it .jp small{ font-size:.92rem; font-weight:600; }
+.pillars div{ font-size:1.05rem; font-weight:800; }
+.pillars div i{ font-size:.9rem; }
+.method{ font-size:1.12rem; }
+.method .big{ font-size:1.45rem; }
+.ticket .head .no{ font-size:1.05rem; font-weight:700; }
+.ticket .head .dt{ font-size:1.02rem; font-weight:700; }
+.ticket .head h3{ font-size:1.45rem; }
+.ticket .theme{ font-size:1.15rem; }
+.voice{ font-size:1.15rem; font-weight:700; }
+.prof .role{ font-size:.95rem; font-weight:700; }
+.prof .name{ font-size:2rem; }
+.prof .creds{ font-size:1.05rem; font-weight:700; }
+.prof .story{ font-size:1.1rem; font-weight:600; }
+.step .n{ font-size:1rem; font-weight:700; }
+.step h3{ font-size:1.25rem; }
+.step p{ font-size:1.08rem; font-weight:600; color:var(--ink-sub); }
+.detail .row{ font-size:1.08rem; }
+.detail .k{ font-size:1rem; font-weight:800; flex-basis:100px; }
+.detail .v small{ font-size:.98rem; font-weight:600; }
+.faq summary{ font-size:1.15rem; font-weight:800; }
+.faq .a{ font-size:1.08rem; font-weight:600; }
+.closing .msg{ font-size:1.4rem; }
+.closing .sign{ font-size:1rem; font-weight:700; }
+footer{ font-size:.9rem; font-weight:600; }
+@media (max-width:420px){
+  .hero h1{ font-size:2rem; }
+  .when .d .dt{ font-size:1.9rem; }
+}
+@media (min-width:760px){
+  body{ font-size:20px; }
+  .hero h1{ font-size:3.2rem; }
+}
+/* ===== 読みやすい文字版ここまで ===== */
 </style>
 </head>
 <body>
