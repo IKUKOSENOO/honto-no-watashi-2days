@@ -344,6 +344,78 @@ footer{ font-size:.9rem; font-weight:600; }
   .hero h1{ font-size:3.2rem; }
 }
 /* ===== 読みやすい文字版ここまで ===== */
+
+/* ===== 写真 ===== */
+.prof .photo{ display:block; width:180px; height:180px; border-radius:50%; object-fit:cover; object-position:center 20%; margin:0 auto 20px; border:5px solid #fff; box-shadow:0 14px 30px rgba(190,90,130,.3); }
+.pic{ max-width:520px; margin:0 auto 28px; }
+.pic img{ width:100%; height:auto; display:block; border-radius:18px; box-shadow:0 16px 34px rgba(190,90,130,.25); }
+.hero-pic{ margin:4px auto 28px; }
+/* ===== 写真ここまで ===== */
+
+/* ============================================================
+   水色×ピンク版（UTAGEのテンプレートの色）
+   ※ひとつ前の「やわらかいピンク版」に戻したいときは、ここから「水色×ピンク版ここまで」までを消す
+   ============================================================ */
+:root{
+  --aqua:   #daf8fa;
+  --aqua2:  #e8fbfc;
+  --lav:    #fde6f6;
+  --berry:  #dc437c;   /* 見出しのピンク（ちょっと元気なピンク） */
+  --plum2:  #c23a6f;
+  --rasp:   #dc437c;
+  --rasp2:  #ee5f92;
+}
+/* 一番上：水色からピンクへ */
+.hero{
+  background:
+    radial-gradient(55% 32% at 4% 6%,  rgba(204,246,250,.95) 0%, rgba(204,246,250,0) 70%),
+    radial-gradient(50% 30% at 98% 22%, rgba(255,255,255,.9) 0%, rgba(255,255,255,0) 70%),
+    radial-gradient(60% 34% at 8% 80%, rgba(250,198,214,.8) 0%, rgba(250,198,214,0) 70%),
+    linear-gradient(170deg,#e4fafc 0%,#f6ecfa 38%,#fde4ee 75%,#fbd7e6 100%);
+}
+.hero h1, .hero h1 em{ color:var(--berry); }
+.hero .promise b{ color:var(--berry); }
+.chips span{ background:linear-gradient(90deg,var(--aqua),var(--lav)); border-color:rgba(238,95,146,.45); color:var(--berry); }
+.when{ background:linear-gradient(135deg,rgba(255,255,255,.85),rgba(232,251,252,.85)); }
+.when .d{ background:linear-gradient(135deg,#ffffff,var(--aqua2)); }
+
+/* 帯：水色とピンクを、交互に */
+.rasp{ background:linear-gradient(150deg,#d6f6f9 0%,#e9f4fb 45%,#fbe1ef 100%); color:var(--ink); }
+.exp .it{ background:rgba(255,255,255,.75); }
+.blush{ background:linear-gradient(160deg,#fde8f1,#fbd9e8); }
+.sand{ background:linear-gradient(160deg,#e8fbfc,#f4f1fb); }
+.dark{ background:linear-gradient(160deg,#e3fafb,#fde7f2); }
+.closing{ background:radial-gradient(70% 50% at 50% 0%, rgba(255,255,255,.85), rgba(255,255,255,0) 70%), linear-gradient(190deg,#e4fafc 0%,#fbd7e6 100%); }
+footer{ background:#f1dfec; }
+.sticky{ background:rgba(250,246,252,.96); }
+
+/* ボタン：ピンク */
+.btn.gold{ background:linear-gradient(135deg,#ff80a8 0%,#ee4f86 55%,#dc3c78 100%); color:#fff; box-shadow:0 12px 26px rgba(220,67,124,.34), inset 0 1px 0 rgba(255,255,255,.45); }
+/* 流れ・ご質問 */
+.step{ border-left-color:var(--rasp2); }
+.ticket .head{ background:linear-gradient(160deg,#f4709f,#dc437c); }
+.ticket{ border-color:rgba(238,95,146,.6); }
+.pillars div{ border-top-color:var(--rasp2); }
+/* ===== 水色×ピンク版ここまで ===== */
+
+/* ============================================================
+   左が水色、右がピンクのグラデーション（ピンク多め）
+   ※ひとつ前の「水色×ピンク版」に戻したいときは、ここから「左水色グラデここまで」までを消す
+   ============================================================ */
+.hero{
+  background:
+    radial-gradient(50% 30% at 96% 18%, rgba(255,255,255,.75) 0%, rgba(255,255,255,0) 70%),
+    radial-gradient(60% 34% at 70% 85%, rgba(250,190,212,.7) 0%, rgba(250,190,212,0) 70%),
+    linear-gradient(100deg,#d3f6f9 0%,#e9f2fa 16%,#fbe3f1 40%,#fbd0e3 70%,#f9bcd5 100%);
+}
+.rasp{ background:linear-gradient(100deg,#d3f6f9 0%,#e8f1fa 14%,#fbdfee 38%,#f8c6dc 72%,#f5b3cf 100%); }
+.blush{ background:linear-gradient(100deg,#e2f8fa 0%,#fbe6f1 25%,#fbd6e6 65%,#f8c3d9 100%); }
+.sand{ background:linear-gradient(100deg,#dcf7f9 0%,#f3eefa 22%,#fbdceb 60%,#f9cadf 100%); }
+.dark{ background:linear-gradient(100deg,#dcf7f9 0%,#f4eefa 20%,#fcdfec 55%,#f9c9de 100%); }
+.closing{ background:radial-gradient(70% 50% at 70% 0%, rgba(255,255,255,.7), rgba(255,255,255,0) 70%), linear-gradient(100deg,#d3f6f9 0%,#eaf2fa 15%,#fbd9e9 45%,#f7b9d2 100%); }
+footer{ background:linear-gradient(100deg,#e0f5f8,#f7d3e4); }
+.sticky{ background:linear-gradient(100deg,rgba(226,248,250,.97),rgba(251,222,235,.97)); }
+/* ===== 左水色グラデここまで ===== */
 </style>
 </head>
 <body>
@@ -376,6 +448,8 @@ footer{ font-size:.9rem; font-weight:600; }
 
     <p class="sub">～ 人生が動き出す脳の作り方 2days ～</p>
 
+    <figure class="pic hero-pic"><img src="future.jpg" alt="笑顔で旅をたのしむ2人の女性（イメージ）"></figure>
+
     <div class="when">
       <div class="days">
         <div class="d"><div class="no">DAY 1</div><div class="dt">10/26<small>（月）</small></div><div class="tm">21:00〜22:30</div></div>
@@ -396,6 +470,7 @@ footer{ font-size:.9rem; font-weight:600; }
      ============================================================ -->
 <section class="intro">
   <div class="wrap fade">
+    <figure class="pic"><img src="inner-child.jpg" alt="窓辺でほほえむ小さな女の子（イメージ）"></figure>
     <span class="eyebrow">For you</span>
     <h2>答えを探し続けてきた<br>あなたへ</h2>
     <div class="gline"></div>
@@ -502,15 +577,19 @@ footer{ font-size:.9rem; font-weight:600; }
 <section class="dark">
   <div class="wrap fade">
     <span class="eyebrow">Voice</span>
-    <h2>参加された方の声</h2>
+    <h2>ハピ脳®をインストールした方の<br>ミラクル報告✨</h2>
     <div class="gline"></div>
 
-    <!-- VOICE ★ご本人の了承をとったものだけ。名前は出しません -->
+    <!-- VOICE ★いっこさんのActivePageのLP（2026するっと望みを叶えるハピ脳セミナー）から。名前は出しません -->
     <div class="voices">
-      <div class="voice">夢が叶わない理由と、どうすればいいかおしえてもらえたので、<u>さっそく実践します！</u></div>
-      <div class="voice">とにかく<u>楽しい！</u><br>いっこさんのナビがいい！</div>
+      <div class="voice">教授・看護師・キャリア女性が<br><u>「やっと素の自分で生きられる」</u>と涙</div>
+      <div class="voice">私の家族も、子どもが<u>不登校から国立大合格</u>、<br><u>夫婦仲も改善</u>した！</div>
+      <div class="voice">3ヶ月で<u>臨時収入・仕事のご縁・自己実現</u>が<br>どんどん叶うように✨</div>
+      <div class="voice"><u>安心感や自己信頼感</u>で満たされる毎日💕</div>
+      <div class="voice"><u>人生激変！</u>家族・仕事・人間関係が大好転！</div>
+      <div class="voice"><u>毎日がラクで楽しい♪</u></div>
     </div>
-    <p class="note">※個人の感想です。効果や結果を約束するものではありません。</p>
+    <p class="note">※個人の感想です。効果や結果を約束するものではありません。個人差があります。</p>
   </div>
 </section>
 
@@ -525,6 +604,7 @@ footer{ font-size:.9rem; font-weight:600; }
     <div class="gline"></div>
 
     <div class="prof">
+      <img class="photo" src="photo.jpg" alt="蘭野いっこ">
       <div class="role">Happy Brain Method Founder</div>
       <div class="name">蘭野 いっこ</div>
 
@@ -608,16 +688,12 @@ footer{ font-size:.9rem; font-weight:600; }
         <div class="a">その状態で大丈夫です。<strong>むしろ、そういう方のための2日間</strong>です。何かを決めてから来る必要はありません。</div>
       </details>
       <details>
-        <summary>ひとりでの参加でも大丈夫ですか？</summary>
-        <div class="a">もちろんです。おひとりでの参加がほとんどです。話したくないことは、話さなくて大丈夫です。</div>
-      </details>
-      <details>
         <summary>スマホだけでも参加できますか？</summary>
         <div class="a">できます。ZoomのアプリをスマホにいれればOKです。</div>
       </details>
       <details>
-        <summary>しつこい勧誘はありますか？</summary>
-        <div class="a">ありません。2日目の最後に、個別相談のご案内をします。<strong>ご希望の方だけ</strong>お申し込みください。</div>
+        <summary>アーカイブはありますか？</summary>
+        <div class="a">はい、あります。</div>
       </details>
     </div>
   </div>
