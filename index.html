@@ -378,6 +378,38 @@ footer{ font-size:.9rem; font-weight:600; }
   .hero .vtext h1{ font-size:clamp(30px,3.9vw,58px); position:static; left:auto; right:auto; top:auto; }
   .hero .vtext h1::before{ display:none; }
 }
+/* タイトルの下の小さい文字 */
+.hero .vtext h1 .h1sub{ display:block; font-size:.5em; font-weight:700; line-height:1.45; color:#3a2229; margin-top:.45em; text-shadow:0 0 10px rgba(255,255,255,.95); letter-spacing:.04em; }
+
+/* するっと叶ったこと（写真コラージュ） */
+.miracle{ margin-top:46px; }
+.miracle h2{ margin-bottom:20px; }
+.collage{ position:relative; max-width:640px; margin:0 auto 18px; aspect-ratio:1 / .84; }
+.cl{ position:absolute; margin:0; border-radius:6px; background:#fff; padding:7px 7px 7px; box-shadow:0 14px 28px rgba(120,50,80,.28), 0 2px 6px rgba(120,50,80,.18); }
+.cl img{ width:100%; height:100%; object-fit:cover; display:block; border-radius:2px; }
+.cl::before{ content:""; position:absolute; left:50%; top:-11px; width:64px; height:22px; margin-left:-32px; background:rgba(248,176,203,.78); box-shadow:0 1px 3px rgba(0,0,0,.12); transform:rotate(-3deg); z-index:3; }
+.cl figcaption{ position:absolute; left:0; right:0; bottom:0; padding:22px 8px 8px; text-align:center; color:#fff; font-family:var(--serif); font-weight:800; font-size:.92rem; line-height:1.4; letter-spacing:.06em; background:linear-gradient(to top, rgba(120,30,70,.82), rgba(120,30,70,0)); text-shadow:0 1px 6px rgba(0,0,0,.45); }
+.c1{ left:1%; top:7%; width:42%; aspect-ratio:.74 / 1; transform:rotate(-4deg); z-index:2; }
+.c1 img{ object-position:50% 12%; }
+.c2{ right:0; top:0; width:58%; aspect-ratio:1.2 / 1; transform:rotate(2.6deg); z-index:1; }
+.c3{ right:4%; top:51%; width:56%; aspect-ratio:1.85 / 1; transform:rotate(-2.2deg); z-index:3; }
+.c3 img{ object-position:50% 40%; }
+.cl figcaption{ left:7px; right:7px; bottom:7px; }
+.c1::after, .c2::after, .c3::after{ content:"♡"; position:absolute; right:-9px; bottom:-12px; font-size:1.5rem; color:#ee5f92; text-shadow:0 1px 4px rgba(255,255,255,.9); z-index:4; }
+.miracle .note-small{ display:block; text-align:center; font-size:.9rem; font-weight:600; color:var(--ink-sub); margin-top:14px; }
+.talkpic{ max-width:520px; }
+.talkpic img{ aspect-ratio:auto; height:auto; }
+
+/* 「無料で参加する」ボタン：金色に光って、ゆらゆら */
+.btn.gold, .btn.rose{ position:relative; overflow:hidden; background:linear-gradient(135deg,#f3d98d 0%,#e2b95f 50%,#c99a3f 100%); color:#3a1a10;
+  box-shadow:0 10px 24px rgba(168,128,58,.38), inset 0 1px 0 rgba(255,255,255,.65);
+  animation:btn-sway 3.2s ease-in-out infinite, btn-glow 2.4s ease-in-out infinite; }
+.btn.gold::after, .btn.rose::after{ content:""; position:absolute; top:0; left:-60%; width:38%; height:100%; transform:skewX(-20deg); pointer-events:none;
+  background:linear-gradient(100deg, rgba(255,255,255,0), rgba(255,255,255,.8), rgba(255,255,255,0)); animation:btn-shine 3.4s ease-in-out infinite; }
+@keyframes btn-sway{ 0%,100%{ transform:translateY(0) rotate(0); } 25%{ transform:translateY(-2px) rotate(-.7deg); } 75%{ transform:translateY(-2px) rotate(.7deg); } }
+@keyframes btn-glow{ 0%,100%{ box-shadow:0 10px 24px rgba(168,128,58,.38), 0 0 0 0 rgba(255,214,120,0), inset 0 1px 0 rgba(255,255,255,.65); } 50%{ box-shadow:0 10px 24px rgba(168,128,58,.38), 0 0 30px 9px rgba(255,214,120,.85), inset 0 1px 0 rgba(255,255,255,.65); } }
+@keyframes btn-shine{ 0%{ left:-60%; } 55%,100%{ left:135%; } }
+@media (prefers-reduced-motion:reduce){ .btn.gold, .btn.rose{ animation:none; } .btn.gold::after, .btn.rose::after{ display:none; } }
 /* ===== 写真ここまで ===== */
 </style>
 </head>
@@ -404,7 +436,7 @@ footer{ font-size:.9rem; font-weight:600; }
       <p class="place">Free online seminar ／ 2026.10.26 &amp; 10.28</p>
       <p class="vquote">『私の人生、<br>こんなものじゃない』</p>
       <p class="vsub">でも、どうすればいいのかわからない…</p>
-      <h1>もうがまんして<br>頑張りすぎる人生を<br>卒業！</h1>
+      <h1>もうがまんして<br>頑張りすぎる人生を<br>卒業！<span class="h1sub">人生が動き出す脳の作り方<br>無料2daysセミナー</span></h1>
     </div>
   </div>
 
@@ -416,7 +448,6 @@ footer{ font-size:.9rem; font-weight:600; }
     </p>
     <div class="chips"><span>仕事</span><span>人間関係</span><span>家族</span><span>お金</span></div>
 
-    <p class="sub">～ 人生が動き出す脳の作り方 2days ～</p>
 
 
     <div class="when">
@@ -453,24 +484,17 @@ footer{ font-size:.9rem; font-weight:600; }
     </ul>
 
     <p class="bignote">人生を変えるのに、<br>もう<em>「もっと頑張らなきゃ」</em>はいらない。</p>
-  </div>
-</section>
 
-
-<!-- ============================================================
-     3. 体験すること（ラズベリーの帯）
-     ============================================================ -->
-<section class="rasp">
-  <div class="wrap fade">
-    <span class="eyebrow">The experience</span>
-    <h2>この2日間で、<br>体験すること</h2>
-    <div class="gline"></div>
-
-    <div class="exp">
-      <div class="it"><span class="en">Peace</span><div class="jp">本当のわたしと<br>なかよくなる</div></div>
-      <div class="it"><span class="en">Safety</span><div class="jp">安心感を<br>手に入れる<small>（インナーチャイルド・自己受容）</small></div></div>
-      <div class="it"><span class="en">Brain</span><div class="jp">脳と潜在意識を<br>味方にする</div></div>
-      <div class="it"><span class="en">Future</span><div class="jp">枠をはずした<br>未来を描く</div></div>
+    <!-- するっと叶ったこと（写真コラージュ） -->
+    <div class="miracle">
+      <div class="gline"></div>
+      <span class="eyebrow">Come true</span>
+      <h2>ゆるんで、<br>するっと叶った・・・！</h2>
+      <div class="collage">
+        <figure class="cl c1"><img src="c-cannes.jpg" alt="カンヌ国際映画祭のレッドカーペット"><figcaption>カンヌ国際映画祭の<br>レッドカーペット</figcaption></figure>
+        <figure class="cl c2"><img src="c-sky.jpg" alt="天空のレストランでハピ脳仲間と"><figcaption>天空のレストランで<br>ハピ脳仲間と</figcaption></figure>
+        <figure class="cl c3"><img src="c-lecture.jpg" alt="講演会に100人以上のお申込み"><figcaption>講演会に<br>100人以上のお申込み</figcaption></figure>
+      </div>
     </div>
   </div>
 </section>
@@ -509,6 +533,7 @@ footer{ font-size:.9rem; font-weight:600; }
      ============================================================ -->
 <section class="sand">
   <div class="wrap fade">
+    <figure class="pic talkpic"><img src="talk.jpg" alt="同じ気持ちの仲間と、笑顔でおしゃべりする女性たち（イメージ）"></figure>
     <span class="eyebrow">Program</span>
     <h2>2日間のテーマ</h2>
     <div class="gline"></div>
